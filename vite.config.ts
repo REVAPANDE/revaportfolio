@@ -12,4 +12,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Force-enable Nitro with the Vercel preset so `vite build` emits a
+  // Vercel-compatible output (.vercel/output) for deployment on Vercel.
+  nitro: {
+    preset: "vercel",
+  },
 });
