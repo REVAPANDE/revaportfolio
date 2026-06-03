@@ -2,9 +2,12 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Section } from "./Section";
 import { ExternalLink, Github } from "lucide-react";
-import kahaniImg from "@/assets/project-kahani.jpg";
-import pricingImg from "@/assets/project-pricing.jpg";
-import realImg from "@/assets/project-realestate.jpg";
+import kahaniAsset from "@/assets/project-kahani.png.asset.json";
+import pricingAsset from "@/assets/project-pricing.png.asset.json";
+import realAsset from "@/assets/project-realestate.png.asset.json";
+const kahaniImg = kahaniAsset.url;
+const pricingImg = pricingAsset.url;
+const realImg = realAsset.url;
 
 const projects = [
   {
