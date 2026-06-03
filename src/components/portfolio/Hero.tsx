@@ -3,8 +3,20 @@ import { Download, Mail, FolderGit2, Github, Linkedin, Code2, Twitter, ExternalL
 import reva from "@/assets/reva.jpg.asset.json";
 import resume from "@/assets/resume.pdf.asset.json";
 import { AnimatedCounter } from "./AnimatedCounter";
+import { SiReact, SiTypescript, SiPython, SiJavascript, SiNodedotjs, SiMongodb, SiTailwindcss, SiMysql, SiCplusplus, SiTensorflow } from "react-icons/si";
 
-const techIcons = ["React", "TS", "Py", "ML", "AI", "Node", "SQL", "C++"];
+const techIcons = [
+  { Icon: SiReact, color: "#61DAFB", label: "React" },
+  { Icon: SiTypescript, color: "#3178C6", label: "TypeScript" },
+  { Icon: SiPython, color: "#FFD43B", label: "Python" },
+  { Icon: SiJavascript, color: "#F7DF1E", label: "JavaScript" },
+  { Icon: SiNodedotjs, color: "#3C873A", label: "Node.js" },
+  { Icon: SiMongodb, color: "#47A248", label: "MongoDB" },
+  { Icon: SiMysql, color: "#4479A1", label: "SQL" },
+  { Icon: SiTailwindcss, color: "#38BDF8", label: "Tailwind" },
+  { Icon: SiCplusplus, color: "#00599C", label: "C++" },
+  { Icon: SiTensorflow, color: "#FF6F00", label: "ML / AI" },
+];
 
 export function Hero() {
   return (
@@ -97,19 +109,20 @@ export function Hero() {
               </div>
             </div>
             {/* Floating chips */}
-            {techIcons.map((t, i) => {
+            {techIcons.map(({ Icon, color, label }, i) => {
               const angle = (i / techIcons.length) * Math.PI * 2;
-              const x = Math.cos(angle) * 50 + 50;
-              const y = Math.sin(angle) * 50 + 50;
+              const x = Math.cos(angle) * 55 + 50;
+              const y = Math.sin(angle) * 55 + 50;
               return (
                 <motion.div
-                  key={t}
-                  className="absolute glass rounded-xl px-3 py-1.5 text-xs font-mono font-semibold gradient-text"
+                  key={label}
+                  title={label}
+                  className="absolute glass rounded-xl w-11 h-11 flex items-center justify-center shadow-card hover:scale-125 transition-transform"
                   style={{ left: `${x}%`, top: `${y}%`, transform: "translate(-50%,-50%)" }}
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 3 + i * 0.3, repeat: Infinity, delay: i * 0.2 }}
+                  animate={{ y: [0, -12, 0] }}
+                  transition={{ duration: 3 + i * 0.25, repeat: Infinity, delay: i * 0.15 }}
                 >
-                  {t}
+                  <Icon size={22} color={color} />
                 </motion.div>
               );
             })}
