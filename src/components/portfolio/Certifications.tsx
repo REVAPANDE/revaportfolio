@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Section } from "./Section";
 import { Award, ExternalLink, ArrowRight } from "lucide-react";
 import { certifications } from "./certifications-data";
