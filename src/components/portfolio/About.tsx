@@ -21,7 +21,7 @@ export function About() {
             {[
               { Icon: Brain, label: "AI / ML Research", text: "Real-world ML systems" },
               { Icon: Code2, label: "Full Stack Dev", text: "React · Node · TS" },
-              { Icon: Award, label: "Top 1% Academic", text: "CGPA 9.62/10" },
+              { Icon: Award, label: "Top 1% Academic", text: "CGPA 9.67/10" },
               { Icon: GraduationCap, label: "IGDTUW '28", text: "CSE-AI" },
             ].map(({ Icon, label, text }) => (
               <div key={label} className="flex items-start gap-3 p-3 rounded-xl bg-secondary/40">
@@ -43,7 +43,7 @@ export function About() {
             <div className="text-xs text-muted-foreground mt-1">2024 — 2028</div>
             <div className="mt-4 flex items-center justify-between p-3 rounded-xl gradient-primary text-white">
               <span className="text-sm font-medium">Current CGPA</span>
-              <span className="text-2xl font-bold">9.62</span>
+              <span className="text-2xl font-bold">9.67</span>
             </div>
           </div>
           <div className="glass rounded-3xl p-6 shadow-card">

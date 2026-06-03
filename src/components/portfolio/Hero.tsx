@@ -89,8 +89,8 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
             className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 max-w-2xl"
           >
-            <Stat value={9.62} suffix="/10" label="CGPA" decimals={2} />
-            <Stat value={15} suffix="+" label="Projects" />
+            <Stat value={9.67} suffix="/10" label="CGPA" decimals={2} />
+            <Stat value={10} suffix="+" label="Projects" />
             <Stat value={15} suffix="+" label="Certifications" />
             <Stat value={5} suffix="+" label="Hackathons" />
           </motion.div>

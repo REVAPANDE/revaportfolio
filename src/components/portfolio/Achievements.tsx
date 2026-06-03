@@ -5,7 +5,7 @@ import { Trophy, Sparkles, GraduationCap, FlaskConical, ShieldCheck } from "luci
 const items = [
   { Icon: Trophy, title: "MSME Idea Hackathon 5.0", desc: "Selected through a highly competitive process and represented IGDTUW in a national innovation initiative." },
   { Icon: Sparkles, title: "Flipkart Girls Wanna Code 7.0", desc: "Selected as a mentee through a highly competitive nationwide selection among thousands of applicants." },
-  { Icon: GraduationCap, title: "Academic Excellence", desc: "Maintaining a CGPA of 9.62 / 10 in Computer Science Engineering with Artificial Intelligence." },
+  { Icon: GraduationCap, title: "Academic Excellence", desc: "Maintaining a CGPA of 9.67 / 10 in Computer Science Engineering with Artificial Intelligence." },
   { Icon: FlaskConical, title: "Research & Innovation", desc: "Worked on AI-driven Dynamic Pricing and Demand Forecasting systems with measurable production-grade impact." },
   { Icon: ShieldCheck, title: "CDAC Cyber Gyan Program", desc: "Successfully completed cybersecurity and ethical hacking training under CDAC." },
 ];
